@@ -75,7 +75,7 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "bullet"
   gem "rubocop"
-  gem "rubocop-performance", "~> 1.18"
+  # gem "rubocop-performance", "~> 1.18"
   gem "rubocop-rails"
   gem "rubocop-rake"
   gem "web-console"

@@ -10,6 +10,15 @@ module Crewswap
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 8.0
+      config.generators do |g|
+      g.test_framework :rspec, fixtures: true
+      g.factory_bot dir: 'spec/factories'
+      g.fixture_replacement :factory_bot, dir: 'spec/factories'
+    end
+
+    # Auto loading services folder
+    config.autoload_paths << Rails.root.join('app/services')
+    config.autoload_paths << Rails.root.join('app/helpers')
 
     # Please, add to the `ignore` list any other `lib` subdirectories that do
     # not contain `.rb` files, or that should not be reloaded or eager loaded.
