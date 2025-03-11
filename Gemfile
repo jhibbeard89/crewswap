@@ -107,7 +107,7 @@ group :test do
   gem "capybara"
   gem "database_cleaner-active_record"
   gem "rails-controller-testing"
-  gem "rspec-rails", "~> 6.1.0"
+  gem "rspec-rails", "~> 7.1.1"
   gem "rubocop-capybara"
   gem "rubocop-rspec"
   gem "selenium-webdriver", "~> 4.0"
