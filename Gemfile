@@ -31,7 +31,7 @@ gem "solid_cable"
 # Authentication & Authorization  #
 ###################
 gem "devise"
-# gem "pundit"
+gem "pundit"
 
 ####################
 # Form and UI      #
